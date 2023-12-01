@@ -10,6 +10,12 @@ import "tsconfig-paths/register";
 
 import "./tasks";
 
+/**
+ * I have changed the solidity version to 0.8.13 because of the following error:
+ *  - Error HH502: Couldn't download compiler version list. Please check your internet connection and try again.
+ * Please change it back to 0.8.19 if you see the above error on your side. Thanks.
+ **/
+
 // See, in general, https://hardhat.org/hardhat-runner/docs/config#configuration
 const config: HardhatUserConfig = {
     solidity: {

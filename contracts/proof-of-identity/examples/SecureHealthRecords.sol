@@ -11,8 +11,8 @@ import "../interfaces/IProofOfIdentity.sol";
 contract SecureHealthRecords is AccessControl {
     // State variables
     IProofOfIdentity private _proofOfIdentity;
-    mapping(uint256 => HealthRecord) private _healthRecords;
-    mapping(uint256 => mapping(address => bool)) private _accessControl;
+    mapping(uint256 => HealthRecord) private _healthRecords; // patientTokenId => HealthRecord
+    mapping(uint256 => mapping(address => bool)) private _accessControl; // patientTokenId => grantee => bool
 
     // Health record structure
     struct HealthRecord {
