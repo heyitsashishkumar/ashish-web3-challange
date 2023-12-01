@@ -5,6 +5,7 @@
         "test:poi": "npm run test ./test/proof-of-identity/proofOfIdentity.test.ts",
         "test:auction": "npm run test ./test/proof-of-identity/examples/auction/auction.test.ts",
         "test:storage": "npm run test ./test/proof-of-identity/examples/simpleStorage/simpleStorage.test.ts",
+        "test:healthrecords": "npm run test ./test/proof-of-identity/examples/secureHealthRecords/secureHealthRecords.test.ts",
         "docgen": "rm -rf ./docs && npx hardhat docgen",
         "coverage": "rm -rf coverage coverage.json && npx hardhat clean && npx hardhat coverage",
         "prettier:check": "npx prettier . --check",
@@ -24,7 +25,8 @@
         "prettier": "^2.8.8",
         "prettier-plugin-solidity": "^1.1.3",
         "solidity-docgen": "^0.6.0-beta.36",
-        "tsconfig-paths": "^4.2.0"
+        "tsconfig-paths": "^4.2.0",
+        "typechain": "^8.3.2"
     },
     "dependencies": {
         "@openzeppelin/contracts": "^4.9.3",
